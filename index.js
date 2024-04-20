@@ -6,8 +6,7 @@ let attemps = 0;
 let min = 1;
 let max = 100;
 let rightNum = Math.floor(Math.random () * (max - min + 1)) + min;
-    btn.onclick = function(event) {
-    event.preventDefault();
+    btn.onclick = function() {
     attemps++;
     att.textContent = attemps;
     let theGuess = parseInt(guess.value);
